@@ -28,17 +28,23 @@ The objective of this project was to create a RESTful API to manage a To-Do List
 ### Commands to Restart the Application:
 
 1. Restore dependencies:
-   ```bash
+```
    dotnet restore
 ```
+
+2. Build the project:
 
 ```
 dotnet build
 ```
 
+3. Create the initial migration:
+
 ```
 dotnet ef migrations add InitialCreate
 ```
+
+4. Apply the migration to the database:
 
 ```
 dotnet ef database update
